@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "nombre": "Control XBOX",
+    "precio": "1499",
+    "img": "https://m.media-amazon.com/images/I/71WX6wVepIL._AC_SX466_.jpg",
+    "stock": 40
+  },
+  {
+    "id": 2,
+    "nombre": "Televisión 55",
+    "precio": "13999",
+    "img": "https://m.media-amazon.com/images/I/61zlEVWvQzL._AC_SY355_.jpg",
+    "stock": 20
+  },
+  {
+    "id": 3,
+    "nombre": "Ventilador para laptop",
+    "precio": "399",
+    "img": "https://m.media-amazon.com/images/I/81orVm78EkS._AC_SY355_.jpg",
+    "stock": 60
+  },
+  {
+    "id": 4,
+    "nombre": "Laptop Surface",
+    "precio": "16999",
+    "img": "https://m.media-amazon.com/images/I/61OvV27-44L._AC_SL1500_.jpg",
+    "stock": 14
+  },
+  {
+    "id": 5,
+    "nombre": "Bocina bluetooth",
+    "precio": "999",
+    "img": "https://m.media-amazon.com/images/I/61Ph+p48yJL._AC_SY355_.jpg",
+    "stock": 100
+  },
+  {
+    "id": 6,
+    "nombre": "Audífonos true wireless",
+    "precio": "478",
+    "img": "https://m.media-amazon.com/images/I/51go1YZQLrL._AC_SY355_.jpg",
+    "stock": 22
+  },
+  {
+    "nombre": "Casco",
+    "precio": "500",
+    "img": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1556722010-giro-aether-mips-1556722003.jpg",
+    "stock": "45",
+    "id": 7
+  },
+  {
+    "nombre": "Cartera",
+    "precio": "254",
+    "img": "https://m.media-amazon.com/images/I/61WMfafdhAL._AC_SL1000_.jpg",
+    "stock": "3",
+    "id": 8
+  }
+]
