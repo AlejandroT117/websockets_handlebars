@@ -61,5 +61,19 @@
     "img": "https://www.soriana.com/dw/image/v2/BGBD_PRD/on/demandware.static/-/Sites-soriana-grocery-master-catalog/default/dw3adaa66a/images/product/7500435114967-A.jpg?sw=1000&sh=1000&sm=fit",
     "stock": "456",
     "id": 9
+  },
+  {
+    "id": 10,
+    "nombre": "Xiaomi redmi 9",
+    "precio": "4999",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_830330-MLA48798662445_012022-O.jpg",
+    "stock": "5"
+  },
+  {
+    "id": 11,
+    "nombre": "tacx neo 2t",
+    "precio": "32500",
+    "img": "https://static.garmincdn.com/en/products/T2875.60/g/cf-lg-dcdcf7d9-f287-4bdb-894d-44dc1806342b.jpg",
+    "stock": "5"
   }
 ]

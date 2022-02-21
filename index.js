@@ -11,6 +11,9 @@ const io = new Server(server);
 const Contenedor = require('./models/products')
 const productos = new Contenedor('./public/database/data.json')
 
+const Cont_Mensajes = require('./models/messages')
+const mensajes = new Cont_Mensajes('./public/database/messages.json')
+
 //Routes set
 const homeRouter = require("./routes/home");
 
@@ -52,8 +55,25 @@ io.on("connection", (socket) => {
   socket.on('new_product', (product)=>{
     productos.save({...product})
     socket.emit('producto', {...product})
-
   })
+
+  socket.on('messages', (ObjMensajes)=>{
+    for (const m of Object.entries(ObjMensajes)) {
+      console.log(m)
+      socket.emit("mensaje", {
+        email:m[1].email,
+        fecha:m[1].fecha,
+        mensaje:m[1].mensaje
+      })
+      
+    }
+  })
+
+  socket.on('new_message', (message)=>{
+    mensajes.save({...message})
+    socket.emit('mensaje', {...message})
+  })
+
 });
 
 //manejo de errores
