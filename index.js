@@ -8,6 +8,9 @@ const { Server } = require("socket.io");
 const server = http.createServer(app);
 const io = new Server(server);
 
+const Contenedor = require('./models/products')
+const productos = new Contenedor('./public/database/data.json')
+
 //Routes set
 const homeRouter = require("./routes/home");
 
@@ -39,12 +42,17 @@ io.on("connection", (socket) => {
 
     for (const p of Object.entries(objProductos)) {
       socket.emit("producto", {
-        id: p[1].id,
         nombre: p[1].nombre,
         precio: p[1].precio,
         img: p[1].img,
       });
     }
+  })
+
+  socket.on('new_product', (product)=>{
+    productos.save({...product})
+    socket.emit('producto', {...product})
+
   })
 });
 

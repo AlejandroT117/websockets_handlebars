@@ -54,5 +54,12 @@
     "img": "https://m.media-amazon.com/images/I/61WMfafdhAL._AC_SL1000_.jpg",
     "stock": "3",
     "id": 8
+  },
+  {
+    "nombre": "shampoo",
+    "precio": "45",
+    "img": "https://www.soriana.com/dw/image/v2/BGBD_PRD/on/demandware.static/-/Sites-soriana-grocery-master-catalog/default/dw3adaa66a/images/product/7500435114967-A.jpg?sw=1000&sh=1000&sm=fit",
+    "stock": "456",
+    "id": 9
   }
 ]

@@ -23,7 +23,13 @@ class Contenedor{
 
       new_object.id = this.next_id
 
-      data.push(new_object)
+      data.push({
+        id:new_object.id,
+        nombre: new_object.nombre,
+        precio: new_object.precio,
+        img:new_object.img,
+        stock: new_object.stock,
+      })
 
       await fs.writeFile(this.filename, JSON.stringify(data, null, 2), 'utf-8')
     }catch(e){

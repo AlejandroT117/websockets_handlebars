@@ -1,13 +1,13 @@
 <h1>Añade un nuevo producto</h1>
 <div class="col-md-6 mb-3">
-  <form action="/add" method="post">
+  <form action="" method="post" id="form-new-product">
     <div class="form-group">
       <label for="nombre">Nombre del producto</label>
-      <input class="form-control" name='nombre' type='text' id='nombre 'required>
+      <input class="form-control" name='nombre' type='text' id='nombre' required>
     </div>
     <div class="form-group">
       <label for="precio">Precio del producto</label>
-      <input class="form-control" name='precio' id='precio 'required type='number'>
+      <input class="form-control" name='precio' id='precio' required type='number'>
     </div>
     <div class="form-group">
       <label for="img">URL a Imagen del Producto</label>
@@ -35,13 +35,13 @@
     </tr>
   </thead>
   <tbody id="tbody">
-    {{#each objProductos}}
+    {{!-- {{#each objProductos}}
       <tr>
         <td>{{this.nombre}}</td>
         <td>{{this.precio}}</td>
         <td><img src="{{this.img}}" alt="{{this.nombre}}"></td>
       </tr>
-    {{/each}}
+    {{/each}} --}}
   </tbody>
 
 </table>
