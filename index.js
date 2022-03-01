@@ -59,7 +59,7 @@ io.on("connection", (socket) => {
 
   socket.on('messages', (ObjMensajes)=>{
     for (const m of Object.entries(ObjMensajes)) {
-      console.log(m)
+      //console.log(m)
       socket.emit("mensaje", {
         email:m[1].email,
         fecha:m[1].fecha,
@@ -72,6 +72,7 @@ io.on("connection", (socket) => {
   socket.on('new_message', (message)=>{
     mensajes.save({...message})
     socket.emit('mensaje', {...message})
+    socket.broadcast.emit('mensaje', {...message})
   })
 
 });
