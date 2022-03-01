@@ -55,6 +55,7 @@ io.on("connection", (socket) => {
   socket.on('new_product', (product)=>{
     productos.save({...product})
     socket.emit('producto', {...product})
+    socket.broadcast.emit('producto', {...product})
   })
 
   socket.on('messages', (ObjMensajes)=>{
